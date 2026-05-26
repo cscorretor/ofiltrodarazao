@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inge Voelz | Consultoria em Gestão de Saúde no Vale do Itajaí</title>
+  <meta name="description" content="Consultoria estratégica para clínicas, hospitais-dia e sócios médicos: contratos com operadoras, glosas, governança, qualidade, indicadores e eficiência financeira.">
+  <meta name="theme-color" content="#071a2c">
+  <meta property="og:title" content="Inge Voelz | Consultoria em Gestão de Saúde">
+  <meta property="og:description" content="Transforme clínica médica em empresa de saúde: menos vazamento de receita, mais previsibilidade e gestão com método.">
+  <meta property="og:type" content="website">
+  <style>
+    :root{
+      --ink:#071a2c;--ink2:#0b2740;--teal:#1fb6a6;--teal2:#bff7ef;--gold:#d6b25e;--paper:#f7f3ed;--white:#fffdf8;--muted:#5b6975;--line:rgba(7,26,44,.12);
+      --shadow:0 24px 70px rgba(7,26,44,.16);--radius:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--paper),#ffffff);line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(247,243,237,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:-.03em}
+    .mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--ink),var(--teal));display:grid;place-items:center;color:white;box-shadow:0 12px 30px rgba(31,182,166,.25)}
+    .mark svg{width:25px;height:25px}
+    .links{display:flex;gap:22px;align-items:center;font-size:14px;color:#263847}
+    .links a{text-decoration:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 22px;font-weight:800;text-decoration:none;background:var(--ink);color:white;box-shadow:0 14px 30px rgba(7,26,44,.22);transition:.2s transform,.2s box-shadow}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(7,26,44,.28)}
+    .btn.alt{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+    .hero{position:relative;overflow:hidden;padding:78px 0 54px;background:
+      radial-gradient(circle at 82% 10%, rgba(31,182,166,.22), transparent 28%),
+      radial-gradient(circle at 15% 15%, rgba(214,178,94,.25), transparent 26%)}
+    .heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:white;border:1px solid var(--line);font-size:13px;font-weight:800;color:var(--ink2);box-shadow:0 8px 25px rgba(7,26,44,.06)}
+    .dot{width:8px;height:8px;background:var(--teal);border-radius:50%;box-shadow:0 0 0 6px rgba(31,182,166,.12)}
+    h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.065em;margin:22px 0 22px}
+    .lead{font-size:clamp(18px,2.1vw,23px);color:#314352;max-width:680px;margin:0 0 28px}
+    .heroActions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+    .mini{background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:20px;padding:16px;min-height:110px}
+    .mini b{font-size:24px;letter-spacing:-.03em;display:block}
+    .mini span{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+    .panel{position:relative;background:linear-gradient(145deg,#0a2238,#071a2c);color:white;border-radius:36px;padding:28px;box-shadow:var(--shadow);overflow:hidden}
+    .panel:before{content:"";position:absolute;inset:-120px -90px auto auto;width:280px;height:280px;border-radius:50%;background:rgba(31,182,166,.28)}
+    .score{position:relative;border:1px solid rgba(255,255,255,.16);border-radius:26px;padding:26px;background:rgba(255,255,255,.06)}
+    .score h2{font-size:28px;letter-spacing:-.04em;margin:0 0 12px}
+    .list{display:grid;gap:12px;margin-top:24px}
+    .item{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:18px;background:rgba(255,255,255,.07)}
+    .check{width:22px;height:22px;border-radius:50%;background:var(--teal);display:grid;place-items:center;flex:0 0 auto;color:var(--ink);font-weight:900}
+    section{padding:76px 0}
+    .sectionHead{max-width:780px;margin-bottom:34px}
+    .kicker{color:#0f8077;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:900}
+    h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.055em;line-height:1.02;margin:10px 0 14px}
+    .sub{color:var(--muted);font-size:18px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 14px 40px rgba(7,26,44,.06)}
+    .card h3{font-size:22px;letter-spacing:-.035em;margin:12px 0 10px}
+    .icon{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:#e7fbf8;color:#08756c;font-weight:900}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:start}
+    .quote{background:var(--ink);color:white;border-radius:36px;padding:36px;box-shadow:var(--shadow)}
+    .quote p{font-size:25px;line-height:1.18;letter-spacing:-.04em;margin:0}
+    .quote small{display:block;color:#b8c5ce;margin-top:18px}
+    .steps{counter-reset:s;display:grid;gap:14px}
+    .step{counter-increment:s;background:white;border:1px solid var(--line);border-radius:22px;padding:20px 20px 20px 70px;position:relative}
+    .step:before{content:counter(s);position:absolute;left:20px;top:20px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:white;font-weight:900}
+    .modules{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .module{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px}
+    .module strong{display:block;font-size:16px;letter-spacing:-.02em}
+    .module span{display:block;color:var(--muted);font-size:13px;margin-top:8px}
+    .about{background:linear-gradient(180deg,#fff, #eefbf9)}
+    .bio{display:grid;grid-template-columns:300px 1fr;gap:36px;align-items:center}
+    .portrait{aspect-ratio:1;border-radius:36px;background:
+      radial-gradient(circle at 50% 34%, rgba(255,255,255,.95) 0 16%, transparent 17%),
+      radial-gradient(ellipse at 50% 76%, rgba(255,255,255,.92) 0 28%, transparent 29%),
+      linear-gradient(145deg,var(--ink),var(--teal));
+      box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .portrait:after{content:"IV";position:absolute;right:22px;bottom:16px;color:rgba(255,255,255,.2);font-size:82px;font-weight:900;letter-spacing:-.08em}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .badge{padding:9px 12px;border-radius:999px;background:white;border:1px solid var(--line);font-size:13px;font-weight:800;color:#314352}
+    .cta{padding:86px 0;background:var(--ink);color:white}
+    .ctaBox{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .cta h2{margin:0 0 10px}
+    .cta p{color:#cbd7de;margin:0;font-size:18px;max-width:700px}
+    .form{background:white;color:var(--ink);border-radius:30px;padding:22px;min-width:320px;box-shadow:var(--shadow)}
+    .field{display:grid;gap:7px;margin-bottom:12px}
+    label{font-size:13px;font-weight:800;color:#3f4e5a}
+    input,select,textarea{width:100%;border:1px solid var(--line);border-radius:15px;padding:13px 14px;font:inherit;background:#fbfaf7;color:var(--ink)}
+    textarea{min-height:96px;resize:vertical}
+    footer{padding:32px 0;background:#061522;color:#b9c6ce}
+    footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .fine{font-size:12px;color:#778691;margin-top:16px}
+    @media(max-width:900px){
+      .links{display:none}.heroGrid,.split,.bio,.ctaBox{grid-template-columns:1fr}.cards,.trust{grid-template-columns:1fr}.modules{grid-template-columns:1fr 1fr}.hero{padding-top:44px}.panel{border-radius:28px}
+    }
+    @media(max-width:560px){.wrap{width:min(100% - 26px,1160px)}.modules{grid-template-columns:1fr}.heroActions{display:grid}.btn{width:100%}h1{font-size:42px}.form{min-width:0}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="principal">
+    <div class="wrap navin">
+      <a class="brand" href="#top" aria-label="Inge Voelz Consultoria">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M12 33c9-1 14-7 15-20 7 5 10 12 9 21" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M12 35h24" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span>
+        <span>Inge Voelz<br><small style="font-weight:700;letter-spacing:0;color:#64727c">Gestão de Saúde</small></span>
+      </a>
+      <div class="links">
+        <a href="#diagnostico">Diagnóstico</a><a href="#metodo">Método</a><a href="#programa">Programa</a><a href="#autoridade">Autoridade</a>
+        <a class="btn" href="#contato">Agendar conversa</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap heroGrid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span> Consultoria estratégica para clínicas e hospitais-dia</span>
+          <h1>Clínicas médicas não quebram por falta de pacientes. Quebram por vazamento de gestão.</h1>
+          <p class="lead">A Inge Voelz ajuda sócios médicos do Vale do Itajaí a transformar operação clínica em empresa de saúde: contratos mais claros, processos mais seguros, indicadores visíveis e decisões financeiras com método.</p>
+          <div class="heroActions">
+            <a class="btn" href="https://wa.me/5547999796000?text=Ol%C3%A1%2C%20Inge.%20Quero%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20para%20minha%20cl%C3%ADnica." target="_blank" rel="noopener">Quero um diagnóstico</a>
+            <a class="btn alt" href="#metodo">Ver como funciona</a>
+          </div>
+          <div class="trust" aria-label="pontos de autoridade">
+            <div class="mini"><b>20+ anos</b><span>na administração de hospital especializado</span></div>
+            <div class="mini"><b>35%</b><span>do faturamento via convênios não operadoras estruturados</span></div>
+            <div class="mini"><b>ONA</b><span>experiência em qualidade, risco e segurança do paciente</span></div>
+          </div>
+        </div>
+        <aside class="panel" aria-label="resumo da proposta">
+          <div class="score">
+            <h2>Diagnóstico de Rentabilidade e Risco</h2>
+            <p style="color:#d8e4ea;margin:0">Uma análise objetiva para encontrar onde a clínica perde dinheiro, tempo e poder de negociação.</p>
+            <div class="list">
+              <div class="item"><span class="check">✓</span><span>Auditoria de glosas, faturamento e falhas TISS/TUSS.</span></div>
+              <div class="item"><span class="check">✓</span><span>Revisão de contratos, pacotes e relacionamento com operadoras.</span></div>
+              <div class="item"><span class="check">✓</span><span>Mapa de KPIs para previsibilidade, governança e escala.</span></div>
+              <div class="item"><span class="check">✓</span><span>Plano executivo de 90 dias com prioridades de alto impacto.</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="diagnostico">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div class="kicker">O problema real</div>
+          <h2>O médico-sócio costuma enxergar a agenda. A consultoria revela o sistema.</h2>
+          <p class="sub">Agenda cheia não é sinônimo de clínica saudável. A margem pode estar escorrendo em glosas, tributação mal enquadrada, contratos antigos, retrabalho, conflito societário e ausência de indicadores.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">01</div><h3>Glosas e faturamento</h3><p>Processos frágeis entre autorização, recepção, centro cirúrgico e faturamento criam perdas silenciosas e desgaste com operadoras.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Contratos sem estratégia</h3><p>Pacotes mal modelados e contratos “de gaveta” reduzem previsibilidade, aumentam fricção administrativa e enfraquecem a negociação.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Gestão por intuição</h3><p>Sem DRE gerencial, KPIs e governança, decisões caras são tomadas com base em sensação — não em evidência operacional.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo" style="background:#fff">
+      <div class="wrap split">
+        <div class="quote">
+          <p>“A clínica madura não depende do heroísmo do fundador. Ela funciona porque seus processos, contratos e números trabalham juntos.”</p>
+          <small>Posicionamento da marca: gestão executiva, técnica e aplicável à realidade local de Blumenau e Vale do Itajaí.</small>
+        </div>
+        <div>
+          <div class="kicker">Método IV</div>
+          <h2>Da desordem operacional à clínica governável.</h2>
+          <div class="steps">
+            <div class="step"><strong>Diagnosticar</strong><br>Leitura dos contratos, fluxo de faturamento, indicadores disponíveis, estrutura societária e jornada do paciente.</div>
+            <div class="step"><strong>Quantificar</strong><br>Identificação de perdas, riscos e oportunidades com base em números: glosas, prazos, margem, produtividade e custo por procedimento.</div>
+            <div class="step"><strong>Redesenhar</strong><br>Protocolos, rotinas, pacotes, painéis de indicadores e responsabilidades por área.</div>
+            <div class="step"><strong>Implantar</strong><br>Acompanhamento executivo com metas, rituais de gestão e plano de melhoria em ciclos de 30, 60 e 90 dias.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programa">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div class="kicker">Produto de entrada</div>
+          <h2>Imersão executiva para sócios de clínicas médicas.</h2>
+          <p class="sub">Um programa prático para médicos, diretores e administradores que desejam organizar a clínica como empresa de saúde — com ferramentas, planilhas, estudos de caso e decisões aplicáveis.</p>
+        </div>
+        <div class="modules">
+          <div class="module"><strong>1. Engenharia tributária</strong><span>Equiparação hospitalar, separação de receitas e oportunidades de eficiência fiscal com apoio técnico-contábil.</span></div>
+          <div class="module"><strong>2. Contratos e pacotes</strong><span>Modelagem de bundles, negociação com operadoras, TISS/TUSS e blindagem contra glosas.</span></div>
+          <div class="module"><strong>3. Qualidade e KPIs</strong><span>Processos, capacidade instalada, no-show, conversão cirúrgica, faturamento por colaborador e risco.</span></div>
+          <div class="module"><strong>4. Governança societária</strong><span>Rateio de custos, regras entre sócios, partnership, sucessão e preparação para crescimento.</span></div>
+          <div class="module"><strong>5. Marca corporativa premium</strong><span>Jornada do paciente particular, experiência, reputação institucional e escala além do médico fundador.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="autoridade" class="about">
+      <div class="wrap bio">
+        <div class="portrait" role="img" aria-label="símbolo visual abstrato da consultoria Inge Voelz"></div>
+        <div>
+          <div class="kicker">Quem conduz</div>
+          <h2>Ingeborg Voelz une operação hospitalar, números e qualidade assistencial.</h2>
+          <p class="sub">Administradora hospitalar com atuação desde 2004 no Hospital de Olhos de Blumenau, com experiência direta em credenciamento de operadoras, residência médica, ONA, SGQ, gerenciamento de risco, LGPD, contratos, indicadores, faturamento, compras, TI, financeiro e liderança de áreas críticas.</p>
+          <div class="badges">
+            <span class="badge">MBA Gestão Hospitalar Estratégica</span>
+            <span class="badge">MBA Estratégia Empresarial</span>
+            <span class="badge">MBA Contabilidade Empresarial</span>
+            <span class="badge">Controladoria e Finanças</span>
+            <span class="badge">Psicologia Organizacional</span>
+            <span class="badge">Administração de Empresas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="cta">
+      <div class="wrap ctaBox">
+        <div>
+          <div class="kicker" style="color:var(--teal2)">Próximo passo</div>
+          <h2>Antes de vender curso ou consultoria, ofereça clareza.</h2>
+          <p>O melhor convite para o sócio médico não é uma promessa exagerada. É um diagnóstico sério, reservado e objetivo: “onde a sua clínica está perdendo margem e o que deve ser corrigido primeiro?”</p>
+          <p class="fine">Observação: resultados financeiros dependem da realidade documental, tributária, contratual e operacional de cada clínica. O diagnóstico não substitui parecer jurídico, contábil ou regulatório.</p>
+        </div>
+        <form class="form" onsubmit="sendLead(event)">
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" placeholder="Seu nome" required></div>
+          <div class="field"><label for="clinica">Clínica / especialidade</label><input id="clinica" name="clinica" placeholder="Ex.: Oftalmologia, Ortopedia..." required></div>
+          <div class="field"><label for="dor">Principal prioridade</label><select id="dor" name="dor"><option>Glosas e faturamento</option><option>Contratos com operadoras</option><option>KPIs e DRE gerencial</option><option>Governança societária</option><option>Qualidade e processos</option></select></div>
+          <div class="field"><label for="msg">Mensagem</label><textarea id="msg" name="msg" placeholder="Conte em uma frase o que mais preocupa hoje."></textarea></div>
+          <button class="btn" style="width:100%" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>Inge Voelz | Consultoria em Gestão de Saúde</strong><br>Blumenau · Vale do Itajaí · SC</div>
+      <div>WhatsApp: <a href="https://wa.me/5547999796000" target="_blank" rel="noopener">(47) 99979-6000</a><br>E-mail: <a href="mailto:ingevoelz@yahoo.com.br">ingevoelz@yahoo.com.br</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function sendLead(e){
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const text = `Olá, Inge. Quero agendar um diagnóstico estratégico.%0A%0ANome: ${encodeURIComponent(data.get('nome'))}%0AClínica/especialidade: ${encodeURIComponent(data.get('clinica'))}%0APrioridade: ${encodeURIComponent(data.get('dor'))}%0AMensagem: ${encodeURIComponent(data.get('msg') || '')}`;
+      window.open(`https://wa.me/5547999796000?text=${text}`,'_blank','noopener');
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Inge Voelz Consultoria em Gestão de Saúde",
+    "areaServed":"Blumenau, Vale do Itajaí, Santa Catarina",
+    "telephone":"+55 47 99979-6000",
+    "email":"ingevoelz@yahoo.com.br",
+    "description":"Consultoria estratégica para clínicas médicas, hospitais-dia e sócios médicos em gestão de contratos, glosas, governança, qualidade, indicadores e eficiência financeira."
+  }
+  </script>
+</body>
+</html>
